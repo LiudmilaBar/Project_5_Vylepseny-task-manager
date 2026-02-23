@@ -99,11 +99,3 @@ def odstranit_ukol(conn, ukol_id: int):
     cursor.execute("DELETE FROM ukoly WHERE id = %s", (ukol_id,))
     conn.commit()
     cursor.close()
-
-
-#if __name__ == "__main__":
-#    conn = pripojeni_db()  # подключение к task_manager
-#    if conn:
-#        vytvoreni_tabulky(conn)
-#        conn.close()
-#        print("Tabulka vytvořena v task_manager")
